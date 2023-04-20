@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TeamTalk-Frontend'`, () => {
+  it(`should have as title 'emp-manage-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TeamTalk-Frontend');
+    expect(app.title).toEqual('emp-manage-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('TeamTalk-Frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('emp-manage-frontend app is running!');
   });
 });
